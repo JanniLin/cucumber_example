@@ -15,6 +15,13 @@
 2. **UC-2:** Test Login form by entering only the username.
 3. **UC-3:** Test Login form with correct credentials.
 
+## Installation
+
+To install all necessary dependencies, run the following command:
+
+```bash
+npm install
+```
 To run the tests, execute the following command:
 
 ```bash

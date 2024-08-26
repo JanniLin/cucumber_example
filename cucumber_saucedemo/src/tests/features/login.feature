@@ -7,11 +7,11 @@ Feature: Login functionality
     And I clear the username field
     And I clear the password field
     And I click the login button
-    Then I should see the error message "Epic sadface: Username is required"
+    Then I should see the error "<message>"
 
     Examples:
-      | username   | password  |
-      | some_name  | some_pass |
+      | username   | password  |message|
+      | some_name  | some_pass |Epic sadface: Username is required|
 
   Scenario Outline: UC-2 Test Login form by entering only the username
     Given I am on the login page
@@ -19,11 +19,11 @@ Feature: Login functionality
     And I enter "<password>" in the password field
     And I clear the password field
     And I click the login button
-    Then I should see the error message "Epic sadface: Password is required"
+    Then I should see the error "<message>"
 
     Examples:
-      | username   | password  |
-      | some_name  | some_pass |
+      | username   | password  |message               |
+      | some_name  | some_pass |Epic sadface: Password is required|
 
   Scenario Outline: UC-3 Test Login form with correct credentials
 

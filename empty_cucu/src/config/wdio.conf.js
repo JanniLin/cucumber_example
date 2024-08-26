@@ -1,7 +1,8 @@
 exports.config = {
   runner: "local",
   baseUrl: "https://the-internet.herokuapp.com",
-  specs: ["./src/**/*.feature"],
+  //baseUrl: "https://www.saucedemo.com",
+  specs: ["./../tests/feature/**/*.feature"],
 
   maxInstances: 10,
 
@@ -36,7 +37,12 @@ exports.config = {
   framework: "cucumber",
 
   cucumberOpts: {
-    require: ["./src/step-definitions/steps.js"],
+    // require: [
+    //   "./src/tests/step-definitions/valid.steps.js",
+    //   "./src/tests/step-definitions/invalid.steps.js"
+    // ],
+    //require: ["./src/tests/step-definitions/**/*.steps.js"],
+    require: ["./src/tests/step-definitions/steps.js"],
     backtrace: false,
     requireModule: [],
     dryRun: false,

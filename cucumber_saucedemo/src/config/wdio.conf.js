@@ -40,8 +40,7 @@ export const config = {
 
   cucumberOpts: {
     require: [
-      "./../tests/step-definitions/**/*.steps.js",
-      //'./../../tests/support/hooks.js'
+      "./../tests/step-definitions/**/*.steps.js"
     ],
     backtrace: true,
     requireModule: [],

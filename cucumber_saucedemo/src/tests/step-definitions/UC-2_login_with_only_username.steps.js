@@ -24,7 +24,7 @@ When("I click the login button", async  ()=> {
 });
 
 Then(
-  "I should see the error message {string}",
+  "I should see the error  {string}",
   async  (expectedMessage) =>{
     const message = await loginForm.errorMessage.getText();
     expect(message).toContain(expectedMessage);
